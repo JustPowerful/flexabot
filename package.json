@@ -1,0 +1,14 @@
+{
+  "name": "flexbot",
+  "version": "1.0.0",
+  "description": "An open-source discord bot for flexcode coding community",
+  "main": "index.js",
+  "repository": "https://github.com/JustPowerful/flexabot",
+  "author": "JustPowerful",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
