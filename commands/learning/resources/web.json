@@ -1,21 +1,18 @@
 {
-  "title": "🌐 Web Development Resources",
+  "title": "Web Resources",
   "description": "This resource section is for web development & web design.",
   "resources": [
     {
-      "title": "Frontend Development",
+      "title": "Web Development resources section",
       "content": [
-        { "title": "Introduction to react", "href": "https://react.org" },
-        { "title": "Introduction to react", "href": "https://react.org" },
-        { "title": "Introduction to react", "href": "https://react.org" }
-      ]
-    },
-    {
-      "title": "Backend Development",
-      "content": [
-        { "title": "Introduction to react", "href": "https://react.org" },
-        { "title": "Introduction to react", "href": "https://react.org" },
-        { "title": "Introduction to react", "href": "https://react.org" }
+        {
+          "title": "Coder Coder: Learn web development as an absolute beginner",
+          "href": "https://www.youtube.com/watch?v=ysEN5RaKOlA&pp=ygUPd2ViIGRldmVsb3BtZW50"
+        },
+        {
+          "title": "Flexacode Resources for web development",
+          "href": "https://www.google.com"
+        }
       ]
     }
   ]
