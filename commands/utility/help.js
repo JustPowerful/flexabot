@@ -19,7 +19,7 @@ module.exports = {
     interaction.client.commands.map((command) => {
       const name = command.data.name;
       const description = command.data.description;
-      embed.addFields({ name: name, value: description });
+      embed.addFields({ name: `\`${name}\``, value: description });
     });
     await interaction.reply({ embeds: [embed] });
   },
