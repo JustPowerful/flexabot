@@ -11,7 +11,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("resources")
     .setDescription(
-      "Replies with basic resources for you to start learning your topic."
+      `Replies with learning resources, type /resources all to see all categories`
     )
     .addStringOption((option) => {
       // set options here
@@ -24,8 +24,24 @@ module.exports = {
     const category = interaction.options.getString("category");
     const exists = categories.includes(category);
     if (!exists) {
+      if (category === "all") {
+        // reply with the possible list of all categories
+        const embed = new EmbedBuilder()
+          .setTitle("All possible resource categories")
+          .setDescription(
+            "These are all the resource categories you can browse"
+          )
+          .setThumbnail(interaction.client.user.displayAvatarURL());
+
+        categories.forEach((category) => {
+          let filePath = path.join(resourcesPath, `${category}.json`);
+          let file = require(filePath);
+          embed.addFields({ name: `\`${category}\``, value: file.description });
+        });
+        return interaction.reply({ embeds: [embed] });
+      }
       return await interaction.reply(
-        `This category doesn't exist, please type \`/help\` for more.`
+        `This category doesn't exist, please type \`/resources all\` for more.`
       );
     }
     const filePath = path.join(resourcesPath, `${category}.json`);

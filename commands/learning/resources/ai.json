@@ -1,0 +1,19 @@
+{
+  "title": "Artificial Intelligence Resources",
+  "description": "This resource section is for AI, Machine Learning and AI applications.",
+  "resources": [
+    {
+      "title": "Web Development resources section",
+      "content": [
+        {
+          "title": "Coder Coder: Learn web development as an absolute beginner",
+          "href": "https://www.youtube.com/watch?v=ysEN5RaKOlA&pp=ygUPd2ViIGRldmVsb3BtZW50"
+        },
+        {
+          "title": "Flexacode Resources for web development",
+          "href": "https://www.google.com"
+        }
+      ]
+    }
+  ]
+}
